@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test of a in-session person as expected 1`] = `
+<li
+  className="Person"
+>
+  <img
+    alt="avatar-text"
+    className="avatar"
+    src="alt-text"
+  />
+  <span>
+    name
+  </span>
+  <div
+    className="green-dot"
+  />
+  <p
+    className="location"
+  >
+    In Session
+  </p>
+</li>
+`;
+
+exports[`snapshot test of a onStage person as expected 1`] = `
+<li
+  className="Person"
+>
+  <img
+    alt="avatar-text"
+    className="avatar"
+    src="alt-text"
+  />
+  <span>
+    name
+  </span>
+  <div
+    className="green-dot"
+  />
+  <p
+    className="location"
+  >
+    On Stage
+  </p>
+</li>
+`;
+
+exports[`snapshot test of a person who left as expected 1`] = `
+<li
+  className="Person"
+>
+  <img
+    alt="avatar-text"
+    className="avatar"
+    src="alt-text"
+  />
+  <span>
+    name
+  </span>
+  <div
+    className="grey-dot"
+  />
+  <p
+    className="location"
+  >
+    Left Session
+  </p>
+</li>
+`;

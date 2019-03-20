@@ -1,14 +1,21 @@
 import React from 'react';
+import './Person.css';
 
-function Person(id,name,avatar,inSession,onStage) {
+
+function Person(props) {
+    let onStage = props.onStage;
+    let name = props.name;
+    let avatar = props.avatar;
+    let inSession = props.inSession;
+
    //inSession
    if(inSession === true && onStage === true){
     return (
         <li className="Person">
             <img className="avatar" alt="avatar-text" src={avatar}/>
-            <h3>{name}</h3>
+            <span>{name}</span>
             <div className ="green-dot"></div>
-            <p>On Stage</p>
+            <p className="location">On Stage</p>
         </li>
     );
    }
@@ -16,9 +23,9 @@ function Person(id,name,avatar,inSession,onStage) {
     return (
         <li className="Person">
             <img className="avatar" alt="avatar-text" src={avatar}/>
-            <h3>{name}</h3>
+            <span>{name}</span>
             <div className ="green-dot"></div>
-            <p>In Session</p>
+            <p className="location">In Session</p>
         </li>
     );
    }
@@ -26,9 +33,9 @@ function Person(id,name,avatar,inSession,onStage) {
     return (
         <li className="Person">
             <img className="avatar" alt="avatar-text" src={avatar}/>
-            <h3>{name}</h3>
+            <span>{name}</span>
             <div className ="grey-dot"></div>
-            <p>Left Session</p>
+            <p className="location">Left Session</p>
         </li>
     );
    }

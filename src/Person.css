@@ -1,0 +1,9 @@
+.avatar {
+    border-radius: 50%;
+    max-height:40px;
+    max-width:40px;
+  }
+
+  .location{
+      margin-left:50px;
+  }

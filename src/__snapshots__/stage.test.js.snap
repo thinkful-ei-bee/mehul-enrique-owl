@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Stage as expected 1`] = `
+<li
+  className="stage-obj"
+>
+  <p>
+    name
+     
+  </p>
+  <img
+    alt="avatar-text"
+    className="avatar-stage"
+    src="alt-text"
+  />
+</li>
+`;

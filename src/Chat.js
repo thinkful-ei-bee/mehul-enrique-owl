@@ -1,6 +1,13 @@
 import React from 'react';
+import './Chat.css';
 
-function Chat(id,type,message,time,timeStamp,avatar,name) {
+
+function Chat(props) {
+    let type = props.type;
+    let avatar = props.avatar;
+    let name = props.name;
+    let time = props.time;
+    let message = props.message;
    //inSession
    if(type === 'message'){
        let date = new Date(time);

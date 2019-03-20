@@ -1,0 +1,29 @@
+
+.App{
+    display:flex;
+    flex-direction:row;
+    
+}
+
+.ppl-List{
+display:flex;
+flex-direction:column;
+border:5px solid black;
+max-width:200px;
+}
+
+.chat-list{
+display:flex;
+flex-direction:column;
+border:5px solid black;
+max-width:200px;
+}
+
+.stage-list{
+    display:flex;
+    flex-direction:row;
+    max-width:500px;
+    border:5px solid black;
+
+    
+}

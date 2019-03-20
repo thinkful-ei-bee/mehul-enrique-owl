@@ -1,45 +1,93 @@
 import React from 'react';
 import Person from './Person.js'
 import Chat from './Chat.js'
+import Stage from './stage.js'
+
+import './App.css';
+
 
 function App(props) {
 
-let ppl_list = props.participants;
+
 let chat_list = props.chatEvents;
-let mappedPplList = ppl_list.map(obj => {
-    return Person(obj.id,obj.name,obj.avatar,obj.inSession,obj.onStage);
-    } 
-    );
 
-mappedPplList.join('');
+const onStage_ppl=props.participants.filter(participant=>participant.onStage) 
+const inSession=props.participants.filter(participant=>participant.inSession && !participant.onStage) 
+const left=props.participants.filter(participant=>!participant.onStage&&!participant.inSession) 
+let ppl_list = onStage_ppl.concat(inSession).concat(left)
 
 
+// chat list
 let mappedChatList = chat_list.map(obj => {
-    let avatar = "";
-    let name = "";
+  
+
     for(let x = 0; x< ppl_list.length; x++)
-    { console.log("here");
+    {   
         if(ppl_list[x].id === obj.participantId)
         {
-            avatar = ppl_list[x].avatar;
-            name = ppl_list[x].name;
+            obj.avatar = ppl_list[x].avatar;
+            obj.name = ppl_list[x].name;
             
             break;
         }
     }
-    return Chat(obj.id,obj.type,obj.message,obj.time,obj.timestamp,avatar,name);
-    } 
-    );
 
-mappedChatList.join('');
+    return {
+        id:obj.id,
+        type:obj.type,
+        message:obj.message,
+        time:obj.time,
+        timestamp:obj.timestamp,
+        avatar:obj.avatar,
+        name:obj.name
+    }
+    } 
+); 
+
 
 
 
 
 return (
 <main className='App'>
-<ul>{mappedPplList}</ul>
-<ul>{mappedChatList}</ul>
+<ul className="ppl-List"> 
+{ppl_list.map(obj => (
+    <Person
+    id={obj.id}
+    name={obj.name}
+    avatar={obj.avatar}
+    inSession = {obj.inSession}
+    onStage = {obj.onStage}
+  />
+          ))}
+</ul>
+<ul className="chat-list"> 
+{mappedChatList.map(obj => (
+    
+    <Chat
+    id={obj.id}
+    type={obj.type}
+    message={obj.message}
+    time = {obj.time}
+    timestamp = {obj.timestamp}
+    avatar = {obj.avatar}
+    name = {obj.name}
+  />
+          ))}
+</ul>
+
+<ul className="stage-list"> 
+{onStage_ppl.map(obj => (
+    
+    <Stage
+    avatar = {obj.avatar}
+    name = {obj.name}
+  />
+          ))}
+</ul>
+
+
+
 </main>
  );
 }

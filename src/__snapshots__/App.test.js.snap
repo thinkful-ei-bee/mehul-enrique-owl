@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test a chat message as expected 1`] = `
+<main
+  className="App"
+>
+  <ul
+    className="ppl-List"
+  >
+    <li
+      className="Person"
+    >
+      <img
+        alt="avatar-text"
+        className="avatar"
+        src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+      />
+      <span>
+        Koren Templeton
+      </span>
+      <div
+        className="green-dot"
+      />
+      <p
+        className="location"
+      >
+        On Stage
+      </p>
+    </li>
+    <li
+      className="Person"
+    >
+      <img
+        alt="avatar-text"
+        className="avatar"
+        src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+      />
+      <span>
+        Ashla Attwool
+      </span>
+      <div
+        className="green-dot"
+      />
+      <p
+        className="location"
+      >
+        On Stage
+      </p>
+    </li>
+    <li
+      className="Person"
+    >
+      <img
+        alt="avatar-text"
+        className="avatar"
+        src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+      />
+      <span>
+        Caty Flucker
+      </span>
+      <div
+        className="green-dot"
+      />
+      <p
+        className="location"
+      >
+        In Session
+      </p>
+    </li>
+    <li
+      className="Person"
+    >
+      <img
+        alt="avatar-text"
+        className="avatar"
+        src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+      />
+      <span>
+        Frank Runciman
+      </span>
+      <div
+        className="green-dot"
+      />
+      <p
+        className="location"
+      >
+        In Session
+      </p>
+    </li>
+    <li
+      className="Person"
+    >
+      <img
+        alt="avatar-text"
+        className="avatar"
+        src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+      />
+      <span>
+        Axe Kubicka
+      </span>
+      <div
+        className="grey-dot"
+      />
+      <p
+        className="location"
+      >
+        Left Session
+      </p>
+    </li>
+  </ul>
+  <ul
+    className="chat-list"
+  >
+    <li
+      className="Message"
+    >
+      <img
+        alt="avatar-text"
+        className="avatar"
+        src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+      />
+      <h3>
+        Axe Kubicka
+      </h3>
+      <p>
+        7
+        :
+        50
+      </p>
+      <p>
+        Hello world
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Caty Flucker
+         gave a thumbs up 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Frank Runciman
+         gave a thumbs down 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Koren Templeton
+         raised their hand 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Koren Templeton
+         clapped 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Koren Templeton
+         joined 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Ashla Attwool
+         left 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Axe Kubicka
+         joined the stage 
+      </p>
+    </li>
+    <li
+      className="action"
+    >
+      <p>
+        Axe Kubicka
+         left the stage
+      </p>
+    </li>
+  </ul>
+  <ul
+    className="stage-list"
+  >
+    <li
+      className="stage-obj"
+    >
+      <p>
+        Koren Templeton
+         
+      </p>
+      <img
+        alt="avatar-text"
+        className="avatar-stage"
+        src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+      />
+    </li>
+    <li
+      className="stage-obj"
+    >
+      <p>
+        Ashla Attwool
+         
+      </p>
+      <img
+        alt="avatar-text"
+        className="avatar-stage"
+        src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+      />
+    </li>
+  </ul>
+</main>
+`;
